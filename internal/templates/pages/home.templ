@@ -1,0 +1,13 @@
+package pages
+
+import (
+    "psubbin/internal/domain"
+    "psubbin/internal/templates/partials"
+    "psubbin/internal/templates/shared"
+)
+
+templ HomePage(broker *domain.Broker) {
+	@shared.Page("Home") {
+		@partials.Search("")
+	}
+}
